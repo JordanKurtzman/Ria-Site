@@ -1,0 +1,37 @@
+.footer{
+    position: fixed;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    background-color: $color-black;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    &__text {
+        color: $color-light-grey;
+        font-size: 2rem;
+        padding: 1.5rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &__text:hover{
+        color: $color-white;
+    }
+    &__links{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    @include respond(phone) {
+        &__links{
+            display: none;
+        }
+    }
+    @include respond(tab-port){
+        &__links{
+            display: none;
+        }
+    }
+}
