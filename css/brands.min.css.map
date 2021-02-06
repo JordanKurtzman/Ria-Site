@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA;;;GAGG,AAGH,UAAU,CACR,WAAW,CAAE,uBAAuB,CACpC,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,GAAG,CAChB,YAAY,CCLS,KAAK,CDM1B,GAAG,CAAE,uCAAyC,CAC9C,GAAG,CAAE,8CAAgD,CAAC,2BAA2B,CACjF,yCAA2C,CAAC,eAAe,CAC3D,wCAA0C,CAAC,cAAc,CACzD,uCAAyC,CAAC,kBAAkB,CAC5D,mDAAqD,CAAC,aAAa,CAGrE,AAAA,IAAI,AAAC,CACH,WAAW,CAAE,uBAAuB,CACpC,WAAW,CAAE,GAAG,CACjB",
     "sources": [
-        "../scss/font-awesome/brands.scss",
-        "../scss/font-awesome/_variables.scss"
+        "../scss/brands.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "brands.min.css"

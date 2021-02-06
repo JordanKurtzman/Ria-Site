@@ -6,13 +6,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
-
-    
-
+    box-sizing: border-box;
 
     &__container {
-        height: 75%;
+        height: 60rem;
         width: 75%;
         padding-top: $nav-height;
         display: flex;
@@ -21,9 +18,11 @@
 
         @include respond(tab-port) {
                 flex-direction: column;
-                height: 80%;
+                width: 75%;
+
         }
             &--heading{
+                margin: 1.5rem;
                 background-color: $color-red;
                 display: flex;
                 flex-direction: column;
@@ -33,13 +32,17 @@
                 text-align: center;
                 border-radius: 4px;
                 padding: 1rem 3rem;
+                
                 @include respond(tab-port){
                     width: 100%;
-                    height: 50%;
+                    over-flow: hidden;
+                    padding: 3rem 3rem;
+
                 }
                     &-primary{
                         font-size: 3.5rem;
                         font-weight: 300; 
+                        line-height: 4rem;
                         @include respond(tab-port){
                             font-size: 3rem;
                             font-weight: 300;
@@ -63,16 +66,19 @@
                     }
             }
             &--paragraph{
-                display: flex;
                 width: 40%;
-                height: 70%;
+                margin-top: 2.5rem;
                 align-items: center;
                 padding: 1rem 3rem;
                 font-size: 1.6rem;
                 line-height: 2rem;
+                margin-left: 3rem;
+                
                 @include respond(tab-port){
                     width: 100%;
-                    height: 50%;
+                    
+                
+
                 }
                 @include respond(tab-land){
                     font-size: 2rem;
@@ -84,10 +90,16 @@
         width: 75%;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 6rem;
+        @include respond(phone){
+            position: relative;
+            margin-top: 15rem;
+        }
         &--image{
             padding: 4rem;
             max-width: 100%;
             height: auto;
+            display: block;
         }
     }
     &__middle{
@@ -104,7 +116,7 @@
             width: 45%;
             padding: 2rem;
             @include respond (tab-port) {
-                width: 75%;
+                width: 100%;
             }
             &-linkheading:link,
             &-linkheading:active,
@@ -112,6 +124,7 @@
                 margin-top: 3rem;
                 margin-bottom: 3rem;
                 font-size: 3rem;
+                line-height: 3.5rem;
                 text-decoration: none;
                 color: $color-black;
             }
@@ -135,11 +148,12 @@
             font-size: 1.6rem;
             padding: 2rem;
             @include respond(tab-port){
-                width: 75%;
+                width: 100%;
             }
             &-heading{
                 font-size: 3rem;
                 margin-bottom: 3rem;
+                line-height: 3.5rem;
             }
             &-form-title{
                 font-size: 2rem;

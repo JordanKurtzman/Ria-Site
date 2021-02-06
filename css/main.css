@@ -466,10 +466,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main__container {
-  height: 75%;
+  height: 60rem;
   width: 75%;
   padding-top: 8rem;
   display: -webkit-box;
@@ -485,11 +487,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 80%;
+    width: 75%;
   }
 }
 
 .main__container--heading {
+  margin: 1.5rem;
   background-color: #d60024;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,13 +516,15 @@ body {
 @media (max-width: 56.25em) {
   .main__container--heading {
     width: 100%;
-    height: 50%;
+    over-flow: hidden;
+    padding: 3rem 3rem;
   }
 }
 
 .main__container--heading-primary {
   font-size: 3.5rem;
   font-weight: 300;
+  line-height: 4rem;
 }
 
 @media (max-width: 56.25em) {
@@ -549,23 +554,20 @@ body {
 }
 
 .main__container--paragraph {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 40%;
-  height: 70%;
+  margin-top: 2.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 3rem;
   font-size: 1.6rem;
   line-height: 2rem;
+  margin-left: 3rem;
 }
 
 @media (max-width: 56.25em) {
   .main__container--paragraph {
     width: 100%;
-    height: 50%;
   }
 }
 
@@ -580,12 +582,21 @@ body {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 6rem;
+}
+
+@media (max-width: 37.5em) {
+  .main__slideshow {
+    position: relative;
+    margin-top: 15rem;
+  }
 }
 
 .main__slideshow--image {
   padding: 4rem;
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .main__middle {
@@ -615,7 +626,7 @@ body {
 
 @media (max-width: 56.25em) {
   .main__middle--salons-in-the-cloud {
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -623,6 +634,7 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
   font-size: 3rem;
+  line-height: 3.5rem;
   text-decoration: none;
   color: #252729;
 }
@@ -652,13 +664,14 @@ body {
 
 @media (max-width: 56.25em) {
   .main__middle--mailing-list {
-    width: 75%;
+    width: 100%;
   }
 }
 
 .main__middle--mailing-list-heading {
   font-size: 3rem;
   margin-bottom: 3rem;
+  line-height: 3.5rem;
 }
 
 .main__middle--mailing-list-form-title {
