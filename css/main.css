@@ -26,19 +26,19 @@ html {
   /*10px percentage of default 16px font size */
 }
 
-@media (max-width: 37.5em) {
+@media (max-device-width: 37.5em) {
   html {
     font-size: 35%;
   }
 }
 
-@media (max-width: 56.25em) {
+@media (max-device-width: 56.25em) {
   html {
     font-size: 40%;
   }
 }
 
-@media (max-width: 75em) {
+@media (max-device-width: 75em) {
   html {
     font-size: 48%;
   }
@@ -326,6 +326,23 @@ body {
   display: none;
 }
 
+@media (max-device-width: 56.25em) {
+  .hamburgerNav {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1.5rem;
+    position: absolute;
+  }
+  .hamburgerNav__bar1, .hamburgerNav__bar2, .hamburgerNav__bar3 {
+    background-color: #252729;
+    width: 3.5rem;
+    height: 5px;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+
 @media (max-width: 56.25em) {
   .hamburgerNav {
     cursor: pointer;
@@ -358,11 +375,29 @@ body {
   visibility: hidden;
 }
 
+@media (max-device-width: 56.25em) {
+  .verticalnav {
+    width: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
 @media (max-width: 56.25em) {
   .verticalnav {
     width: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+}
+
+@media (max-device-width: 56.25em) {
+  .verticalnav__closebtn:link, .verticalnav__closebtn:active, .verticalnav__closebtn:visited {
+    visibility: visible;
+    font-size: 5rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -447,6 +482,18 @@ body {
   }
 }
 
+@media (max-device-width: 37.5em) {
+  .footer__links {
+    display: none;
+  }
+}
+
+@media (max-device-width: 56.25em) {
+  .footer__links {
+    display: none;
+  }
+}
+
 @media (max-width: 56.25em) {
   .footer__links {
     display: none;
@@ -481,6 +528,16 @@ body {
   margin-right: auto;
 }
 
+@media (max-device-width: 56.25em) {
+  .main__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 75%;
+  }
+}
+
 @media (max-width: 56.25em) {
   .main__container {
     -webkit-box-orient: vertical;
@@ -513,6 +570,14 @@ body {
   padding: 1rem 3rem;
 }
 
+@media (max-device-width: 56.25em) {
+  .main__container--heading {
+    width: 100%;
+    over-flow: hidden;
+    padding: 3rem 3rem;
+  }
+}
+
 @media (max-width: 56.25em) {
   .main__container--heading {
     width: 100%;
@@ -527,6 +592,14 @@ body {
   line-height: 4rem;
 }
 
+@media (max-device-width: 56.25em) {
+  .main__container--heading-primary {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 4rem;
+  }
+}
+
 @media (max-width: 56.25em) {
   .main__container--heading-primary {
     font-size: 3rem;
@@ -539,6 +612,13 @@ body {
   font-size: 5rem;
   font-weight: 700;
   color: #f2ce00;
+}
+
+@media (max-device-width: 56.25em) {
+  .main__container--heading-primary-art {
+    font-size: 4rem;
+    font-weight: 700;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -565,9 +645,22 @@ body {
   margin-left: 3rem;
 }
 
+@media (max-device-width: 56.25em) {
+  .main__container--paragraph {
+    width: 100%;
+  }
+}
+
 @media (max-width: 56.25em) {
   .main__container--paragraph {
     width: 100%;
+  }
+}
+
+@media (max-device-width: 75em) {
+  .main__container--paragraph {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -583,6 +676,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 6rem;
+}
+
+@media (max-device-width: 37.5em) {
+  .main__slideshow {
+    position: relative;
+    margin-top: 15rem;
+  }
 }
 
 @media (max-width: 37.5em) {
@@ -610,6 +710,15 @@ body {
   margin-bottom: 2rem;
 }
 
+@media (max-device-width: 56.25em) {
+  .main__middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 56.25em) {
   .main__middle {
     -webkit-box-orient: vertical;
@@ -622,6 +731,12 @@ body {
 .main__middle--salons-in-the-cloud {
   width: 45%;
   padding: 2rem;
+}
+
+@media (max-device-width: 56.25em) {
+  .main__middle--salons-in-the-cloud {
+    width: 100%;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -660,6 +775,12 @@ body {
 .main__middle--mailing-list {
   font-size: 1.6rem;
   padding: 2rem;
+}
+
+@media (max-device-width: 56.25em) {
+  .main__middle--mailing-list {
+    width: 100%;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -721,6 +842,12 @@ body {
   margin-top: 4rem;
   font-weight: 300;
   font-size: 1.6rem;
+}
+
+@media (max-device-width: 75em) {
+  .main__bottom {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 75em) {

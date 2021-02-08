@@ -21,6 +21,10 @@
                 width: 75%;
 
         }
+        @include resize(mid){
+            flex-direction: column;
+            width: 75%;
+        }
             &--heading{
                 margin: 1.5rem;
                 background-color: $color-red;
@@ -39,6 +43,11 @@
                     padding: 3rem 3rem;
 
                 }
+                @include resize(mid){
+                    width: 100%;
+                    over-flow: hidden;
+                    padding: 3rem 3rem;
+                }
                     &-primary{
                         font-size: 3.5rem;
                         font-weight: 300; 
@@ -47,12 +56,21 @@
                             font-size: 3rem;
                             font-weight: 300;
                             line-height: 4rem;
-                        }                    
+                        }    
+                        @include resize(mid){
+                            font-size: 3rem;
+                            font-weight: 300;
+                            line-height: 4rem;
+                        }                
                         &-art{
                             font-size: 5rem;
                             font-weight: 700;
                             color: $color-yellow; 
                             @include respond(tab-port){
+                                font-size: 4rem;
+                                font-weight: 700;
+                            }
+                            @include resize(mid){
                                 font-size: 4rem;
                                 font-weight: 700;
                             }
@@ -77,10 +95,15 @@
                 @include respond(tab-port){
                     width: 100%;
                     
-                
-
+                }
+                @include resize(mid){
+                    width: 100%;
                 }
                 @include respond(tab-land){
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                }
+                @include resize(wide){
                     font-size: 2rem;
                     line-height: 2.5rem;
                 }
@@ -92,6 +115,10 @@
         margin-right: auto;
         padding-top: 6rem;
         @include respond(phone){
+            position: relative;
+            margin-top: 15rem;
+        }
+        @include resize(skinny){
             position: relative;
             margin-top: 15rem;
         }
@@ -112,10 +139,16 @@
         @include respond(tab-port){
             flex-direction: column;
         }
+        @include resize(mid){
+            flex-direction: column;
+        }
         &--salons-in-the-cloud{
             width: 45%;
             padding: 2rem;
             @include respond (tab-port) {
+                width: 100%;
+            }
+            @include resize(mid){
                 width: 100%;
             }
             &-linkheading:link,
@@ -148,6 +181,9 @@
             font-size: 1.6rem;
             padding: 2rem;
             @include respond(tab-port){
+                width: 100%;
+            }
+            @include resize(mid){
                 width: 100%;
             }
             &-heading{
@@ -199,6 +235,9 @@
         font-weight: 300;
         font-size: 1.6rem;
         @include respond(tab-land){
+            margin-bottom: 2rem;
+        }
+        @include resize(wide){
             margin-bottom: 2rem;
         }
 

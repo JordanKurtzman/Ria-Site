@@ -23,13 +23,22 @@
         margin-top: auto;
         margin-bottom: auto;
     }
-
+    @include resize  (skinny){
+        &__links{
+            display: none;
+        }
+    }
     @include respond(phone) {
         &__links{
             display: none;
         }
     }
     @include respond(tab-port){
+        &__links{
+            display: none;
+        }
+    }
+    @include resize(mid){
         &__links{
             display: none;
         }

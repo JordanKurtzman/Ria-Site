@@ -224,9 +224,23 @@
             transition: 0.4s;
         }
     }
+    @include resize(mid){
+        cursor: pointer;
+        display: inline-block;
+        padding: 1.5rem;
+        position: absolute;
+        &__bar1,
+        &__bar2,
+        &__bar3{
+            background-color: $color-black;
+            width: 3.5rem;
+            height: 5px;
+            margin: 6px 0;
+            transition: 0.4s;
+    }
     
+    }
 }
-
 
 
 
@@ -248,7 +262,25 @@
         transition: 0.5s;
 
     }
+    @include resize(mid){
+        width: 0;
+        transition: 0.5s;
+
+    }
+
     @include respond(tab-port){
+        &__closebtn:link,
+        &__closebtn:active,
+        &__closebtn:visited{
+            visibility: visible;
+            font-size: 5rem;
+            text-decoration: none;
+            color: $color-white;
+            cursor: pointer;
+
+        }
+    }
+    @include resize(mid){
         &__closebtn:link,
         &__closebtn:active,
         &__closebtn:visited{
@@ -295,5 +327,6 @@
     }
 
 }
+    
 
 
